@@ -34,7 +34,7 @@ header.navbar {
     margin: 20px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;/*En başa ve en sona yapıştırır Aralarındaki boşlukları eşit olarak dağıtır.  */
+    justify-content: space-between;
     
     }
   
@@ -77,7 +77,7 @@ header.navbar {
   }
   
   .menu li a:hover {
-      background-color: #5a3c2f; /* Yavaşça arka planı değiştirme */
+      background-color: #5a3c2f; 
       transform: scale(1.1);
   }
   
@@ -92,7 +92,7 @@ header.navbar {
     padding: 30px;
     gap: 30px;
     justify-content: space-between;
-    flex-wrap: wrap; /* Mobil uyumlu yapmak için */
+    flex-wrap: wrap; 
 }
 
 /* Sol Profil Bölümü */
@@ -199,7 +199,7 @@ header.navbar {
 
 .progress {
     height: 100%;
-    width: 0%; /* Başlangıçta 0, JS ile doldurulacak */
+    width: 0%;
     border-radius: 10px;
     transition: width 1s ease-in-out;
 }
@@ -213,7 +213,7 @@ span {
 footer {
     text-align: center;
     padding: 20px;
-    width: 100%; /* Tam genişlikte olacak şekilde */
+    width: 100%;
 }
 
 
@@ -257,7 +257,7 @@ footer {
     gap: 10px;
     font-weight: 600;
     width: 104%; /* Genişliği biraz artırdık */
-    margin: -19px 0 9px -19px; /* Soldan taşması için negatif margin-left */
+    margin: -19px 0 9px -19px;
   }
   
   
