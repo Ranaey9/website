@@ -1,0 +1,1 @@
+This is my personal website. On my website, you can find my own paintings, information about me, famous paintings by artists, and my projects. The menu has Home, About Me, Contact, Famous Paintings, and Share Image sections. The website also has a modern design.
