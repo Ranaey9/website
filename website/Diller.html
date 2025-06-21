@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda</title>
+    <link rel="stylesheet" href="Diller.css">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        .navbar a i,
+        .profile-menu a i {
+          transition: all 0.3s ease;
+        }
+        .navbar a:hover i,
+        .profile-menu a:hover i {
+          transform: scale(1.2) rotate(5deg);
+          color: #ffffff; /* mavi vurgulu renk */
+        }
+            
+      </style> 
+    </head>
+      
+      <body>
+        <header class="navbar">
+            <ul>
+              <li><a href="./Hakkimda.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+              <li><a href="./anasayfa.html"><i class="fas fa-home"></i>  Anasayfa</a></li>
+              <li><a href="./Tablolar.html"><i class="fas fa-image"></i>  Tablolar</a></li>
+              <li><a href="./Paylas.html"><i class="fas fa-upload"></i>  Paylaş</a></li>
+              <li><a href="./iletisim.html"><i class="fas fa-envelope"></i>  İletişim</a></li>
+            </ul>
+          </header>
+       <script>
+            function toggleTheme() {
+              const body = document.body;
+              const toggle = document.getElementById("themeToggle");
+              if (body.classList.contains("light")) {
+                body.classList.remove("light");//açık temayı kaldır, koyu temayı uygula
+                body.classList.add("dark");
+                toggle.innerHTML = "☀️";
+              } else {
+                body.classList.remove("dark");
+                body.classList.add("light");
+                toggle.innerHTML = "🌙";
+              }
+            }
+            </script>
+    <div class="profile-section">
+        <div class="profile-left">
+            <img src="profilfoto.svg" class="profile-pic" alt="Profil Fotoğrafı">
+            <div class="profile-info">
+                <h2>Rana Ayoub</h2>
+                <p>Lisans</p>
+                <p>MÜHENDİSLİK FAKÜLTESİ / YAZILIM MÜHENDİSLİĞİ</p>
+                <p>e-Posta: <a href="mailto:rana.@gmail.com">rana.@gmail.com</a></p>
+                <p>Telefon: <a href="tel:04223774811">05123 456 678</a></p>
+            </div>
+
+            <!-- Profil Menü -->
+            <div class="profile-menu">
+                <ul>
+            <li><a href="./Egtitim-Bilgileri.html"><i class="fas fa-graduation-cap"></i>Eğitim Bilgileri</a></li>
+                    <li><a href="./Hobilerim.html"><i class="fas fa-headphones"></i> Hobilerim</a></li>
+                    <li><a href="./Projeler.html"><i class="fas fa-project-diagram"></i> Projeler</a></li>
+                    <li><a href="./Diller.html"><i class="fas fa-language"></i> Diller</a></li>
+                  </ul>
+            </div>
+        </div>
+
+    
+            <div class="profile-content" id="diller">
+                <div class="mac-bar">
+                    <span class="mac-dot red"></span>
+                    <span class="mac-dot yellow"></span>
+                    <span class="mac-dot green"></span>
+                  </div>
+                  
+                <h2><i class="fas fa-language"> Diller</i></h2>
+            
+                <div class="language-box">
+                    <span>Türkçe</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="100%" style="background-color: #350a02;"></div>
+                        <span>100%</span>
+                    </div>
+                </div>
+                
+                <div class="language-box">
+                    <span>İngilizce</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="50%" style="background-color: #3fc4c4;"></div>
+                        <span>50%</span>
+                    </div>
+                </div>
+                
+                <div class="language-box">
+                    <span>Almanca</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="30%" style="background-color: #7e7d36;"></div>
+                        <span>30%</span>
+                    </div>
+                </div>
+                
+                <div class="language-box">
+                    <span>Arapça</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-skill="90%" style="background-color: #a44633;"></div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                
+                
+
+                    <footer class="page-footer" id="footerClick">
+                        © 2025 Rana Ayoub. Tüm hakları saklıdır.
+                    </footer>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const bars = document.querySelectorAll('.progress');
+                            bars.forEach(bar => {
+                                const width = bar.getAttribute('data-skill');
+                                bar.style.width = width;
+                            });
+                        });
+                    </script>
+                         
+    <script src="odev.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ResimPaylas</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="resim-paylas.css">
+   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+            .menu a:hover i {
+          transform: scale(1.5) rotate(20deg);
+          color: #f4f4f4;
+        }
+      </style> 
+  </head>
+  
+  <body >
+    <nav class="menu">
+      <ul>
+        <li><a href="./Hakkimda.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+        <li><a href="./anasayfa.html"><i class="fas fa-home"></i> Anasayfa</a></li>
+        <li><a href="./Tablolar.html"><i class="fas fa-image"></i>Tablolar</a></li>
+        <li><a href="./Paylas.html"><i class="fas fa-upload"></i> Paylaş</a></li>
+        <li><a href="./iletisim.html"><i class="fas fa-envelope"></i>İletişim</a></li>
+      </ul>
+    </nav>
+      <div class="container" >
+          <h1>📷 Resim Paylaş 🎨</h1>
+          <img src="resimpaylas.png" alt="" class="foto">
+          <input type="file" id="fileInput" accept="image/*">
+          <button onclick="uploadImage()">Yükle</button>
+          <div class="gallery" id="gallery"></div>
+          <p id="message"></p>
+      </div>
+
+      <div class="comment-a" style="display: flex; justify-content: center;">
+        <img src="yildizfoto.svg" alt="" class="yildizfoto">
+        <div>
+            <h2>📝 Resim Hakkında Ne Düşünüyorsunuz?</h2>
+            <textarea id="commentBox" placeholder="Resim hakkında bilgi? Duyguların? Hikayesi?"></textarea>
+            <br>
+            <button onclick="submitComment()">Gönder</button>  <button onclick="window.print()" class="print-btn">🖨️ Sayfayı yazdır</button>
+        </div>
+      </div>
+      <footer class="page-footer" id="footerClick">
+        © 2025 Rana Ayoub. Tüm hakları saklıdır.
+    </footer>
+      <script src="odev.js"></script>
+  </body>
+  </html>
+</html>
